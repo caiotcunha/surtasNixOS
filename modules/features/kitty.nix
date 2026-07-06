@@ -24,7 +24,7 @@
         background = "#1f1c27";
         foreground = "#b6a0ff";
         cursor = "#ff9738";
-        selection_background = "#353146";
+        selection_background = "#FFFFFF";
         selection_foreground = "#1f1c27";
         
         dynamic_background_opacity = "yes";
