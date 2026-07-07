@@ -10,13 +10,6 @@
     boot.kernelModules = [ "kvm-intel" ];
     boot.extraModulePackages = [ ];
 
-    fileSystems."/" =
-      { device = "/dev/disk/by-uuid/7e8013da-de0c-4816-80d1-0b0ce36a76e0";
-        fsType = "ext4";
-      };
-
-    swapDevices = [ ];
-
     nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
     hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 

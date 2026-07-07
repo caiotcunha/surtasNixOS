@@ -2,7 +2,6 @@
 
   flake.nixosModules.desktopConfiguration = { pkgs, lib, ... }: {
     imports = [
-      self.nixosModules.base
       self.nixosModules.desktopHardware
       self.nixosModules.niri
       self.nixosModules.gaming
@@ -20,7 +19,7 @@
 
     # Bootloader.
     boot.loader.grub.enable = true;
-    boot.loader.grub.device = "/dev/sda";
+    boot.loader.grub.device = "nodev";
     boot.loader.grub.useOSProber = true;
 
     networking.hostName = "nixos"; # Define your hostname.
