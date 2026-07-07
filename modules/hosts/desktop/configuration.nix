@@ -8,6 +8,7 @@
       self.nixosModules.gaming
       self.nixosModules.extra_hjem
       self.nixosModules.performance
+      self.nixosModules.preservation
 
       #GUI programs
       self.nixosModules.browser
@@ -60,6 +61,7 @@
       description = "surtas";
       extraGroups = [ "networkmanager" "wheel" ];
       packages = with pkgs; [];
+      initialPassword = "12345";
     };
 
     # Allow unfree packages
